@@ -1,0 +1,116 @@
+/* Tag selektori */
+
+h1 {
+    color: rgb(33, 33, 33);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+/* 
+    class-name mora odgovarati elementu koji ima postavljen atribut class sa vrijednoscu class-name:
+
+    .class-name {
+        attribute: value;
+    }
+
+    <p class="class-name">Lorem ipsum</p>
+*/
+
+.some-random-elements {
+    background-color: aquamarine;
+}
+
+/*  
+    id-name mora odgovarati elementu koji ima postavljen atribut id sa vrijednoscu id-name:
+
+    .id-name {
+        attribute: value;
+    }
+
+    <p id="id-name">Lorem ipsum</p>
+*/
+
+#anchor {
+    text-decoration-line: line-through;
+    text-decoration-color: aqua;
+    text-decoration-style: dashed;
+}
+
+/* Shorthand nacin za neke css atribute: */
+
+#anchor {
+    text-decoration: line-through peru dashed;
+}
+
+/* 
+    INFO: Onaj selektor koji je posljednji postavljen ima prednost, odnosno jedan overridea drugog.
+    P.S. Selektori moraju biti iste specificnosti, al o tome cemo kasnije.
+*/
+
+/* Svi anchor elementi <a> kojima je parent element list item <li>, a kojemu je parent element ordered lista <ol> ce imati ovaj stil: */
+
+/* ol li a {
+    color: royalblue;
+} */
+
+ul a {
+    color: purple;
+}
+
+/* Svi anchor elementi <a> kojima je parent element list item <li> ce imati ovaj stil: */
+
+li a {
+    color: green;
+}
+
+/* 
+    INFO: 
+    SELECTOR SPECIFICITY: (ID, CLASS, TAG) 
+*/
+
+/* Svi anchor elementi <a> kojima je parent element ordered lista <ol> ce imati ovaj stil: */
+
+ol > a {
+    color: yellow;
+}
+
+/* 
+    FORMAT: [attribute="value"]
+
+    <span attribute="value"></span>
+*/
+
+[href="contact.html"] {
+    background-color: teal;
+}
+
+/* Pseudo klase */
+
+/* Kad su selektori spojeni znaci da selektirani element mora imati obje klase */
+
+a.pseudo-class:hover {
+    text-decoration: underline;
+}
+
+a.pseudo-class.first:link {
+    color: rgb(255, 128, 128);
+}
+
+a.pseudo-class.first:hover {
+    color: red;
+}
+
+a.pseudo-class.second:hover {
+    color: green;
+}
+
+a.pseudo-class.third:hover {
+    color: blue;
+}
