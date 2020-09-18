@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Kod link i style tagove, sto se prioriteta tice, bitno je koji je prvi -->
     <link rel="stylesheet" href="css/main.css">
+    <style>
+        .pseudo-class {
+            background-color: aqua;
+        }
+    </style>
 </head>
 <body>
     <h1>Home</h1>
@@ -14,7 +20,7 @@
         <nav>
             <!-- UL je child od NAV, NAV je parent od UL -->
             <ul>
-                <li><a id="anchor" href="index.html">Home</a></li>
+                <li><a id="anchor" href="index.html" style="text-decoration-line: none;">Home</a></li>
                 <li class="some-random-elements"><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -44,6 +50,14 @@
     <a href="#" class="pseudo-class first">Prvi</a>
     <a href="#" class="pseudo-class second">Drugi</a>
     <a href="#" class="pseudo-class third">Treci</a>
+
+    <button>
+        Submit
+    </button>
+
+    <div class="pseudo-other-element">
+        <span>Tekst</span>
+    </div>
 
 </body>
 </html>

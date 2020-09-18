@@ -95,8 +95,20 @@ ol > a {
 
 /* Kad su selektori spojeni znaci da selektirani element mora imati obje klase */
 
+.pseudo-class {
+    background-color: antiquewhite;
+}
+
 a.pseudo-class:hover {
     text-decoration: underline;
+}
+
+a.pseudo-class:visited {
+    color: gray;
+}
+
+a.pseudo-class:active {
+    background-color: lightgray;
 }
 
 a.pseudo-class.first:link {
@@ -114,3 +126,41 @@ a.pseudo-class.second:hover {
 a.pseudo-class.third:hover {
     color: blue;
 }
+
+button:hover {
+    cursor: pointer;
+}
+
+.pseudo-other-element:before {
+    content: 'Read:';
+}
+
+.pseudo-other-element:after {
+    content: 'Read';
+}
+
+ol a:first-child {
+    color: rosybrown;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 100;
+}
+
+h1 { font-weight: 100; }
+h2 { font-weight: 100; }
+h3 { font-weight: 100; }
+
+
+/* 
+    Inline
+    >
+    Internal (ID, Class, Tag)
+    >=
+    External (ID, Class, Tag)
+*/

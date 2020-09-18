@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.static-box {
+  background-color: antiquewhite;
+  width: 100%;
+  height: 100vh; /* Viewport height - visina cijelog prikaza unutar browsera (bijeli segment) */
+}
+
+.box { 
+  width: 80px;
+  height: 70px;
+  background-color: rgb(163, 108, 218);
+}
+
+.static-box > .relative-box {
+  position: relative;
+  background-color: rgb(70, 35, 104);
+  left: 30px;
+  bottom: 10px;
+}
+
+.relative-box .absolute-box {
+  position: absolute;
+  left: 40px;
+  top: 35px;
+  transform: translate(-50%, -50%);
+  height: 50px;
+  width: 50px;
+  background: aquamarine;
+}
+
+.fixed-box {
+  position: fixed;
+  left: 0;
+  top: 20px;
+  width: 100%; /* div ima default vrijednost display: block; sto znaci da uvije zauzima 100% dostupne sirine */
+  height: 40px;
+  background-color: salmon;
+}
+
+.item {
+  width: 30px;
+  height: 60px;
+  background-color: sandybrown;
+}
+
+.float-item.item {
+  float: right;
+}
+
+.float-box {
+  width: 45px;
+  height: 45px;
+  background-color: seagreen;
+  float: left;
+}
