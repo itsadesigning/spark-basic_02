@@ -1,0 +1,107 @@
+/* Flex */
+
+/* 
+  * Flex raspolaze sa preostalim prostorom.
+*/
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;  
+  width: 80%;
+  margin: auto;
+}
+
+.flex-col {
+  flex: 0 1 auto;
+  background-color: hotpink;
+  padding: 4rem 3rem;
+  margin: .5rem;
+}
+
+.flex-col > span {
+
+}
+
+/* CSS Grids */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid-col {
+  background-color: teal;
+  padding: 1rem;
+  margin: .2rem;
+}
+
+/* Desktop first */
+
+@media (max-width: 1281px) {
+  .flex-col {
+    background-color: goldenrod;
+  }
+}
+
+@media (max-width: 1025px) {
+  .flex-col {
+    background-color: ghostwhite;
+  }
+}
+
+@media (max-width: 961px) {
+  .flex-col {
+    background-color: grey;
+  }
+}
+
+@media (max-width: 641px) {
+  .flex-col {
+    background-color: green;
+  }
+}
+
+@media (max-width: 320px) {
+  .flex-col {
+    background-color: yellowgreen;
+  }
+}
+
+./* Mobile first */
+
+/* @media (min-width:320px)  { 
+  .flex-col {
+    background-color: honeydew;
+  }
+}
+
+@media (min-width:481px)  { 
+  .flex-col {
+    background-color: brown;
+  }
+}
+
+@media (min-width:641px)  { 
+  .flex-col {
+    background-color: bisque;
+  }
+}
+
+@media (min-width:961px)  { 
+  .flex-col {
+    background-color: gold;
+  }
+}
+
+@media (min-width:1025px) { 
+  .flex-col {
+    background-color: greenyellow;
+  }
+}
+
+@media (min-width:1281px) { 
+  .flex-col {
+    background-color: goldenrod;
+  }
+}
+*/
