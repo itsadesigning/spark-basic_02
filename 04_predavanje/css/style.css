@@ -1,3 +1,7 @@
-.box {
-  background-color: rgb(175, 175, 175);
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box > img {
+  max-width: 100%;
 }
