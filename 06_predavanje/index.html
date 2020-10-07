@@ -1,39 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <div>
-    <input type="button" value="#FF0000" onclick="changeElementBackground(this.value)">
-    <input type="button" value="#00FF00" onclick="changeElementBackground(this.value)">
-    <input type="button" value="#0000FF" onclick="changeElementBackground(this.value)">
-    <input type="button" value="#0FFFF0" onclick="changeElementBackground(this.value)">
-    <input type="button" value="#FF00FF" onclick="changeElementBackground(this.value)">
-  </div>
-  <hr />
-  <div>
-    <input type="button" value="1" onclick="addToSum(this.value)">
-    <input type="button" value="5" onclick="addToSum(this.value)">
-    <input type="button" value="10" onclick="addToSum(this.value)">
-    <input type="button" value="25" onclick="addToSum(this.value)">
-    <input type="button" value="50" onclick="addToSum(this.value)">
-    <input type="button" value="100" onclick="addToSum(this.value)">
-    <input type="button" value="250" onclick="addToSum(this.value)">
-    <input type="button" value="500" onclick="addToSum(this.value)">
-    <input type="button" value="Reset" onclick="addToSum(this.value)">
-    <div id="sum">0</div>
-  </div>
-  <hr />
-  <div>
-    <input type="button" value="Box" onclick="checkValue(this.value)">
-    <input type="button" value="Card" onclick="checkValue(this.value)">
-    <input type="button" value="Bag" onclick="checkValue(this.value)">
-    <input type="button" value="Cup" onclick="checkValueOptimized(this.value)">
-    <input type="button" value="Bottle" onclick="checkValueOptimized(this.value)">
-  </div>
-  <script src="main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <input
+        type="button"
+        value="#FF0000"
+        onclick="changeElementBackground(this.value)"
+      />
+      <input
+        type="button"
+        value="#00FF00"
+        onclick="changeElementBackground(this.value)"
+      />
+      <input
+        type="button"
+        value="#0000FF"
+        onclick="changeElementBackground(this.value)"
+      />
+      <input
+        type="button"
+        value="#0FFFF0"
+        onclick="changeElementBackground(this.value)"
+      />
+      <input
+        type="button"
+        value="#FF00FF"
+        onclick="changeElementBackground(this.value)"
+      />
+    </div>
+    <hr />
+    <div>
+      <input type="button" value="1" onclick="addToSum(this.value)" />
+      <input type="button" value="5" onclick="addToSum(this.value)" />
+      <input type="button" value="10" onclick="addToSum(this.value)" />
+      <input type="button" value="25" onclick="addToSum(this.value)" />
+      <input type="button" value="50" onclick="addToSum(this.value)" />
+      <input type="button" value="100" onclick="addToSum(this.value)" />
+      <input type="button" value="250" onclick="addToSum(this.value)" />
+      <input type="button" value="500" onclick="addToSum(this.value)" />
+      <input type="button" value="Reset" onclick="addToSum(this.value)" />
+      <div id="sum">0</div>
+    </div>
+    <hr />
+    <div>
+      <input type="button" value="Box" onclick="checkValue(this.value)" />
+      <input type="button" value="Card" onclick="checkValue(this.value)" />
+      <input type="button" value="Bag" onclick="checkValue(this.value)" />
+      <input
+        type="button"
+        value="Cup"
+        onclick="checkValueOptimized(this.value)"
+      />
+      <input
+        type="button"
+        value="Bottle"
+        onclick="checkValueOptimized(this.value)"
+      />
+    </div>
+    <script src="main.js"></script>
+  </body>
 </html>
